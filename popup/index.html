@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Switcher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <image src="../icons/48.png" alt="Color Scheme Switcher Icon" id="icon" />
+      <h1>Color Scheme Switcher</h1>
+    </header>
+
+    <section id="current-site">
+      <h2>Current Site</h2>
+      <select id="color-scheme" aria-label="Color Scheme">
+        <option value="Unset">Unset</option>
+        <option value="Light">Light</option>
+        <option value="Dark">Dark</option>
+      </select>
+      <p id="cannot-set-message">Cannot set color scheme for this site.</p>
+    </section>
+
+    <section>
+      <h2>Site List</h2>
+      <ul id="site-list"></ul>
+    </section>
+
+    <section>
+      <h2>Credits</h2>
+      <p>
+        This extension is developed by
+        <a
+          href="https://github.com/TD99"
+          target="_blank"
+          rel="noopener noreferrer"
+          >TD99</a
+        >.
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
